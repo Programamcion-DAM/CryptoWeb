@@ -2,7 +2,7 @@
 	
 if(issset($_POST['acceptButton'])){
 	if(!empty($_POST['textBox'])){
-		$text = $_POST['ntextBox'];
+		$text = $_POST['textBox'];
 
 		$header = "From: noreply@example.com" . "\r\n";
 		$header .= "Reply-To: noreply@example.com" . "\r\n";
