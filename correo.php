@@ -1,17 +1,18 @@
 <?php
-	
-if(issset($_POST['acceptButton'])){
-	if(!empty($_POST['textBox'])){
-		$text = $_POST['textBox'];
 
-		$header = "From: noreply@example.com" . "\r\n";
-		$header .= "Reply-To: noreply@example.com" . "\r\n";
-		$header .= "X-Mailer: PHP/" . phpversion();
+$para = 'programamciondani@gmail.com';
+$asunto = 'Nuevo adqueriente de DAMcoins';
 
-		$mail = @mail("programamciondani@gmail.com", "Prueba correo", $text,$header);
+$mailHedader = "From: noreply@gmail.com\r\n";
+$mailHedader .= "Reply-To: noreply@gmail.com\r\n";
+$mailHedader .= "Content-type: text/html; charset=utf-8\r\n";
 
-		if($mail){
-			echo "<h4> Mail enviado exitosamente </h4>"
-		}
-	}
-}
+$body = "El numero de cuenta de la persona es: \n".$_POST['textBox'];
+
+
+mail($para,$aunto,$body,$mailHedader) or die('Ocurrió un error');
+
+header('Location: https://programamcion-dam.github.io/CryptoWeb/');
+
+
+?>
