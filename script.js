@@ -12,5 +12,9 @@ function disapearContainer(){
 }
 
 function mail(){
-	window.open('mailto:programamciondani@gmail.com?subject=Email%20Subject&body=Email%20Body%20Text');
+	var direction = document.getElementById('textBox').value;
+	var errorText = document.getElementById('endText');
+	errorText.style.display = "block";
+
+	window.open('mailto:programamciondani@gmail.com?subject=Nueva%20direccion%20de%20cuenta&body=Mi%20dirección%20de%20cuenta%20DAMcoin%20es:%20%20'+direction);
 }
