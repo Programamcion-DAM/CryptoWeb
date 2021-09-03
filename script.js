@@ -12,5 +12,5 @@ function disapearContainer(){
 }
 
 function mail(){
-	window.open('mailto:programamciondani@gmail.com');
+	window.open('mailto:programamciondani@gmail.com?subject=Email%20Subject&body=Email%20Body%20Text');
 }
