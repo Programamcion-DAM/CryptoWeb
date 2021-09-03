@@ -10,3 +10,7 @@ function disapearContainer(){
 		form.style.opacity = "100%";
 	}, 1000);
 }
+
+function mail(){
+	window.open('mailto:programamciondani@gmail.com');
+}
